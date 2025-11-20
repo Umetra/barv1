@@ -1,23 +1,23 @@
 {
   "featured": {
-    "date": "Vendredi 22 Novembre",
-    "title": "Soirée Jazz Live",
-    "description": "Profitez d'une soirée jazz intimiste avec le quartet \"Blue Notes\". Une ambiance feutrée, des cocktails signatures et des standards du jazz revisités.",
+    "date": "Vendredi 21 Novembre",
+    "title": "Soirée du vendredi",
+    "description": "Profitez de vos soirées habituelles du vendredi Au Bar. Retrouvez vos artistes préferés.",
     "image": "/images/events/beer.jpg",
-    "time": "20h00 - 00h00",
+    "time": "21h30 - 00h30",
     "price": "Entrée gratuite",
-    "genre": "Jazz, Blues, Soul",
+    "genre": "Musique",
     "link": "https://instagram.com/"
   },
   "upcoming": [
     {
       "day": "22",
       "month": "Nov",
-      "title": "Soirée Jazz Live",
+      "title": "Soirée Musique",
       "time": "20h00 - 00h00"
     },
     {
-      "day": "23",
+      "day": "28",
       "month": "Nov",
       "title": "DJ Night - House & Techno",
       "time": "22h00 - 02h00"
@@ -25,14 +25,14 @@
     {
       "day": "29",
       "month": "Nov",
-      "title": "Soirée Quiz & Cocktails",
-      "time": "19h00 - 23h00"
+      "title": "Soirée Quiz",
+      "time": "19h00 - 21h00"
     },
     {
-      "day": "30",
+      "day": "29",
       "month": "Nov",
-      "title": "Live Acoustic Session",
-      "time": "20h30 - 00h00"
+      "title": "Concert",
+      "time": "22h00 - 01h00"
     },
     {
       "day": "06",
