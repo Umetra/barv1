@@ -1,10 +1,414 @@
+/* ============================================
+   RESPONSIVE DESIGN - AU BAR
+   Mobile First Approach
+   ============================================ */
+
+/* ============================================
+   TABLETTE & PETIT DESKTOP (1024px et moins)
+   ============================================ */
+
+@media (max-width: 1024px) {
+    section {
+        padding: 6rem 4%;
+    }
+    
+    .nav-links {
+        gap: 2rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================
+   TABLETTE (768px et moins)
+   ============================================ */
+
 @media (max-width: 768px) {
-    .hero-logo {
+    
+    .burger {
+        display: flex !important;
+        z-index: 1001;
+    }
+    
+    /* Utilisez l'ID au lieu de la classe */
+    #navLinks {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 5rem 2rem 2rem;
+        gap: 2rem;
+        transition: right 0.4s ease;
+        border-left: 1px solid rgba(212, 175, 55, 0.2);
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+        align-items: flex-start;
+        z-index: 1000;
+    }
+    
+    #navLinks.active {
+        right: 0;
+    }
+    
+    #navLinks a {
+        font-size: 1.1rem;
+        padding: 1rem 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    
+    /* ===== HERO ===== */
+    .hero {
+        min-height: auto;
+        padding: 5rem 1rem 3rem;
+        gap: 1.5rem;
+    }
+    
+    .hero-content {
+        margin-top: 0;
+        max-width: 800px;  /* 85% de la largeur du conteneur */
+        width: 85%;
+        height: auto;
+        padding: 1rem;
+    }
+    
+    .logo-hero {
+        max-width: 70%;  /* 70% de la largeur du conteneur */
+        width: 70%;
+        height: auto;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero p1 {
+        font-size: 35px;
+    }
+    
+    .hero p2 {
+        font-size: 20px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
         max-width: 300px;
     }
     
-    #events,
-    #contact {
-        padding: 3rem 5% !important;
+    /* ===== HORAIRES ===== */
+    .horaires-box {
+        width: 95%;
+        padding: 1.5rem;
+    }
+    
+    .horaires-box h2 {
+        font-size: 1.5rem;
+    }
+    
+    .horaires-list li {
+        font-size: 0.9rem;
+        padding: 0.6rem 0;
+    }
+    
+    /* ===== SECTIONS ===== */
+    section {
+        padding: 4rem 5%;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    /* ===== EVENTS ===== */
+    .events-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .events-calendar,
+    .events-featured {
+        padding: 1.5rem;
+    }
+    
+    .events-calendar h3,
+    .events-featured h3 {
+        font-size: 1.5rem;
+    }
+    
+    .featured-event-image {
+        height: 250px;
+    }
+    
+    .featured-event-info {
+        padding: 1.5rem;
+    }
+    
+    .featured-event-info h4 {
+        font-size: 1.5rem;
+    }
+    
+    /* ===== GALERIE INSTAGRAM ===== */
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    /* ===== CONTACT ===== */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        max-width: 400px;
+    }
+    
+    .contact-icon {
+        font-size: 3rem;
+    }
+    
+    .contact-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* ===== ADRESSE ===== */
+    .address-section {
+        padding: 1.5rem 5%;
+    }
+    
+    .address-link {
+        font-size: 1rem;
+    }
+    
+    .address-icon {
+        font-size: 1.5rem;
+    }
+    
+    /* ===== FOOTER ===== */
+    footer {
+        padding: 3rem 5%;
+    }
+    
+    .footer-logo {
+        max-width: 150px;
+    }
+    
+    .social-links {
+        gap: 1.5rem;
+    }
+}
+
+/* ============================================
+   MOBILE (480px et moins)
+   ============================================ */
+
+@media (max-width: 480px) {
+    
+    /* ===== NAVIGATION ===== */
+    
+    /* Réduire le padding de la navbar */
+    .navbar {
+        padding: 0.8rem 3%;  /* Plus compact */
+    }
+    
+    /* Réduire le logo navbar */
+    .logo-nav {
+        height: 1.8rem;      /* Logo plus petit */
+        width: auto;
+        max-width: 45%;      /* Maximum 45% de largeur */
+    }
+    
+    /* Réduire le burger */
+    .burger {
+        transform: scale(0.85);  /* 85% de la taille */
+    }
+    
+    .burger span {
+        width: 24px;  /* Barres plus courtes */
+        height: 2px;
+    }
+    
+    /* Menu mobile (largeur adaptée) */
+    #navLinks {
+        width: 85%;  /* Menu prend 85% de l'écran */
+        padding: 4rem 1.5rem 2rem;  /* Padding réduit */
+    }
+    
+    #navLinks a {
+        font-size: 1rem;  /* Texte menu légèrement plus petit */
+        padding: 0.8rem 0;
+    }
+    
+    /* ===== HERO ===== */
+    .hero {
+        min-height: auto;
+        padding: 5rem 1rem 3rem;
+        gap: 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero p1 {
+        font-size: 28px;
+    }
+    
+    .hero p2 {
+        font-size: 16px;
+    }
+
+    .hero-content {
+        margin-top: 0;
+        max-width: 85%;  /* 70% de la largeur du conteneur */
+        width: 85%;
+        height: auto;
+        padding: 1rem;
+    }
+    
+    .logo-hero {
+        max-width: 70%;  /* 85% sur mobile */
+        width: 50%;
+        position: relative;
+        height: auto;
+    }
+    
+    .horaires-box {
+        padding: 1.2rem;
+    }
+    
+    .horaires-box h2 {
+        font-size: 1.3rem;
+    }
+    
+    /* ===== SECTIONS ===== */
+    section {
+        padding: 3rem 5%;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    /* ===== EVENTS ===== */
+    .event-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .event-item-date {
+        min-width: 70px;
+        height: 70px;
+    }
+    
+    .event-item-arrow {
+        display: none;
+    }
+    
+    .featured-event-info h4 {
+        font-size: 1.3rem;
+    }
+    
+    /* ===== GALERIE INSTAGRAM ===== */
+    .instagram-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* ===== BOUTONS ===== */
+    .btn {
+        padding: 1rem 2rem;
+        font-size: 0.9rem;
+    }
+    
+    /* ===== CONTACT ===== */
+    .contact-card {
+        padding: 1.5rem;
+    }
+    
+    /* ===== ADRESSE ===== */
+    .address-link {
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================
+   TRÈS PETITS ÉCRANS (360px et moins)
+   ============================================ */
+
+@media (max-width: 360px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* ============================================
+   MODE PAYSAGE (LANDSCAPE)
+   ============================================ */
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding: 2rem 1rem;
+    }
+    
+    .hero-content {
+        padding: 1rem;
+    }
+    
+    .logo-hero {
+        max-width: 30vw;
+        margin-bottom: 1rem;
+    }
+    
+    .horaires-box {
+        padding: 1.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .btn {
+        padding: 0.8rem 2rem;
     }
 }

@@ -1,41 +1,15 @@
 // Imports CSS
 import './css/base.css'
 import './css/components.css'
+import './css/responsive.css'
 
 // Import JS modules
 import './js/events.js'
+import './js/navigation.js'
 
 console.log('🍸 Le Bar - Site chargé avec succès!')
 
-// ============================================
-// NAVBAR - Effet scroll et menu mobile
-// ============================================
-const navbar = document.getElementById('navbar')
-const burger = document.getElementById('burger')
-const navLinks = document.getElementById('navLinks')
 
-// Effet de scroll sur la navbar
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        navbar?.classList.add('scrolled')
-    } else {
-        navbar?.classList.remove('scrolled')
-    }
-})
-
-// Toggle menu mobile
-burger?.addEventListener('click', () => {
-    burger.classList.toggle('active')
-    navLinks?.classList.toggle('active')
-})
-
-// Fermer le menu au clic sur un lien
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        burger?.classList.remove('active')
-        navLinks?.classList.remove('active')
-    })
-})
 
 // ============================================
 // SMOOTH SCROLL

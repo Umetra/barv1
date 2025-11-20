@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Au Bar - Reims</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="logo"><a href="#home"><img src="/images/logo011.png" alt="Au Bar Logo" class="hero-logo"></a></div>
+            <div class="logo"><a href="#home"><img src="/images/logos/logo011.png" alt="Au Bar Logo" class="logo-hero"></a></div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Accueil</a></li>            
                 <li><a href="#events">Événements</a></li>
@@ -33,7 +34,7 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <!-- Option 1: Avec une image/logo (décommentez pour utiliser) -->
-            <img src="/images/titre011.png" alt="Au Bar Logo" class="hero-logo">
+            <img src="/images/logos/titre011.png" alt="Au Bar Logo" class="hero-content">
         
             <!-- Option 2: Texte stylisé (actuellement actif) -->
             <!--<h1>LE BAR</h1>-->
@@ -172,28 +173,28 @@
     
     <div class="instagram-grid">
         <div class="instagram-card">
-            <img src="/images/photo06.webp" alt="Le bar">
+            <img src="/images/photos/photo06.webp" alt="Le bar">
             <div class="instagram-overlay">
                 <span class="instagram-icon">📸</span>
             </div>
         </div>
         
         <div class="instagram-card">
-            <img src="/images/photo02.JPEG" alt="la terrasse en feu">
+            <img src="/images/photos/photo02.JPEG" alt="la terrasse en feu">
             <div class="instagram-overlay">
                 <span class="instagram-icon">📸</span>
             </div>
         </div>
         
         <div class="instagram-card">
-            <img src="/images/photo01.JPEG" alt="Façade">
+            <img src="/images/photos/photo01.JPEG" alt="Façade">
             <div class="instagram-overlay">
                 <span class="instagram-icon">📸</span>
             </div>
         </div>
         
         <div class="instagram-card">
-            <img src="/images/photo04.webp" alt="Bar">
+            <img src="/images/photos/photo04.webp" alt="Bar">
             <div class="instagram-overlay">
                 <span class="instagram-icon">📸</span>
             </div>
@@ -206,12 +207,12 @@
             </div>
         </div>-->
         
-        <div class="instagram-card">
-            <img src="/images/beer.jpg" alt="Ambiance 2">
+        <!--<div class="instagram-card">
+            <img src="/images/photos/beer1.jpg" alt="Ambiance 2">
             <div class="instagram-overlay">
                 <span class="instagram-icon">📸</span>
             </div>
-        </div>
+        </div>-->
     </div>
 
     <p class="section-subtitle" style="text-align: center;">Retrouvez-nous également sur Insta</p>
@@ -234,7 +235,9 @@
            target="_blank" 
            rel="noopener noreferrer" 
            class="contact-card">
-            <div class="contact-icon">📘</div>
+            <div class="contact-icon">
+                <i class="fab fa-facebook"></i>
+            </div>
             <h3>Facebook</h3>
             <p1>@AuBarReims</p1>
         </a>
@@ -243,7 +246,9 @@
            target="_blank" 
            rel="noopener noreferrer" 
            class="contact-card">
-            <div class="contact-icon">📸</div>
+            <div class="contact-icon">
+                <i class="fab fa-instagram"></i>
+            </div>
             <h3>Instagram</h3>
             <p1>@AuBarReims</p1>
         </a>
@@ -266,13 +271,12 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-          <a href="#home"><div class="logo"><img src="/images/logo011.png" alt="Au Bar Logo" class="hero-logo"></div>
-          </a>
+          <a href="#home">
+            <img src="/images/logos/logo011.png" alt="Au Bar Logo" class="footer-logo">
+            </a>
             <p class="copyright">&copy; 2025 Au Bar - Tous droits réservés</p>
         </div>
     </footer>
-
-    <script type="module" src="/src/main.js"></script>
 
 <!-- SDK Facebook pour le widget Events -->
     <div id="fb-root"></div>

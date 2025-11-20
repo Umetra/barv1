@@ -2,7 +2,7 @@
 async function loadEvents() {
     try {
         // Charger le fichier JSON
-        const response = await fetch('/public/data/events.json');
+        const response = await fetch('/events.json');
         const data = await response.json();
         
         // Afficher la liste des événements (avec clic)
@@ -55,7 +55,7 @@ function showEventDetails(index) {
         time: event.time,
         price: event.price || "Entrée gratuite",
         genre: event.genre || "Musique live",
-        link: event.link || "https://instagram.com/AuBarReims"
+        link: event.link || "https://instagram.com/"
     };
     
     displayFeaturedEvent(detailedEvent);
