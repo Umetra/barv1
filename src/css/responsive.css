@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .hero-logo {
+        max-width: 300px;
+    }
+    
+    #events,
+    #contact {
+        padding: 3rem 5% !important;
+    }
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Au Bar - Reims</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <!-- Canvas pour l'animation de fond -->
+    <canvas class="bg-canvas" id="bgCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="#home"><img src="/images/logo011.png" alt="Au Bar Logo" class="hero-logo"></a></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Accueil</a></li>            
+                <li><a href="#events">Événements</a></li>
+                <li><a href="#gallery">Photos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+     
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <!-- Option 1: Avec une image/logo (décommentez pour utiliser) -->
+            <img src="/images/titre011.png" alt="Au Bar Logo" class="hero-logo">
+        
+            <!-- Option 2: Texte stylisé (actuellement actif) -->
+            <!--<h1>LE BAR</h1>-->
+            <p>Welcome</p>
+            </div>
+            <div class="horaires-box">
+                <h2>Les horaires</h2>
+                <ul class="horaires-list">
+                    <li>
+                        <span class="horaires-jour">lundi</span>
+                        <span class="horaires-heures">17h - 00h30</span>
+                    </li>
+                    <li>
+                        <span class="horaires-jour">mardi</span>
+                        <span class="horaires-heures">17h - 00h30</span>
+                    </li>
+                    <li>
+                        <span class="horaires-jour">mercredi</span>
+                        <span class="horaires-heures">17h - 00h30</span>
+                    </li>
+                    <li>
+                        <span class="horaires-jour">jeudi</span>
+                        <span class="horaires-heures">17h - 00h30</span>
+                    </li>
+                    <li>
+                        <span class="horaires-jour">vendredi</span>
+                        <span class="horaires-heures">17h - 02h00</span>
+                    </li>
+                    <li>
+                        <span class="horaires-jour">samedi</span>
+                        <span class="horaires-heures">17h - 02h00</span>
+                    </li>
+                    <li>
+                        <span class="horaires-jour">dimanche</span>
+                        <span class="horaires-heures">17h - 00h30</span>
+                    </li>
+                </ul>
+            </div>
+    </section>
+  
+<!-- Section Événements (AVEC FACEBOOK)-->
+    
+    <section id="eventsfacebook" class="reveal hidden">
+        <h2 class="section-title">Les events du Bar</h2>
+        <p class="section-subtitle">Nos prochains événements</p>
+        
+        <div class="events-layout">
+                <div class="events-calendar">
+            <h3>Les Prochains événements</h3>
+            
+            
+            <div class="fb-page" 
+                 data-href="https://www.facebook.com/" 
+                 data-tabs="events" 
+                 data-width="500" 
+                 data-height="600"
+                 data-small-header="true" 
+                 data-adapt-container-width="true" 
+                 data-hide-cover="false" 
+                 data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/">Au Bar Reims</a>
+                </blockquote>
+            </div>
+        </div>
+        
+        
+        <div class="events-featured">
+            <h3>Event du moment</h3>
+            
+            <div class="featured-event-card">
+                
+                <div class="featured-event-image">
+                    <img src="/images/events/event-featured.jpg" alt="Event à la une">
+                </div>
+                
+                
+                <div class="featured-event-info">
+                    <span class="event-date-badge">Vendredi 22 Nov</span>
+                    <h4>Soirée Jazz Live</h4>
+                    <p>Profitez d'une soirée jazz intimiste avec le quartet "Blue Notes". Réservation recommandée.</p>
+                    
+                    <div class="event-details">
+                        <div class="event-detail-item">
+                            <span class="detail-icon">🕐</span>
+                            <span>20h00 - 00h00</span>
+                        </div>
+                        <div class="event-detail-item">
+                            <span class="detail-icon">🎫</span>
+                            <span>Entrée gratuite</span>
+                        </div>
+                    </div>
+                    
+                    <a href="https://facebook.com/events/VOTRE_EVENT_ID" target="_blank" class="btn btn-primary">
+                        Voir sur Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Section Événements (SANS FACEBOOK)-->
+<section id="events" class="reveal">
+    <h2 class="section-title">Les events du Bar</h2>
+    <p class="section-subtitle">Nos prochains événements</p>
+    
+    <div class="events-layout">
+        <!-- Colonne GAUCHE - Liste des événements -->
+        <div class="events-calendar">
+            <h3>À venir</h3>
+            <div id="events-list" class="events-list">
+                <!-- Les événements seront chargés ici par JavaScript -->
+                <p style="text-align: center; color: var(--color-text-muted);">Chargement des événements...</p>
+            </div>
+        </div>
+        
+        
+        <!-- Colonne DROITE - Événement à la une -->
+        <div class="events-featured">
+            <h3>Prochain Événement</h3>
+            <div id="featured-event" class="featured-event-card">
+                <!-- L'événement à la une sera chargé ici par JavaScript -->
+                <p style="text-align: center; color: var(--color-text-muted); padding: 2rem;">Chargement...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+      
+<section id="gallery" class="reveal" style="padding: 4rem 5%;">
+    <h2 class="section-title" style="text-align: center;">Les Photos</h2>
+    <p class="section-subtitle" style="text-align: center;">Retrouvez vos souvenirs</p>
+    
+    <div class="instagram-grid">
+        <div class="instagram-card">
+            <img src="/images/photo06.webp" alt="Le bar">
+            <div class="instagram-overlay">
+                <span class="instagram-icon">📸</span>
+            </div>
+        </div>
+        
+        <div class="instagram-card">
+            <img src="/images/photo02.JPEG" alt="la terrasse en feu">
+            <div class="instagram-overlay">
+                <span class="instagram-icon">📸</span>
+            </div>
+        </div>
+        
+        <div class="instagram-card">
+            <img src="/images/photo01.JPEG" alt="Façade">
+            <div class="instagram-overlay">
+                <span class="instagram-icon">📸</span>
+            </div>
+        </div>
+        
+        <div class="instagram-card">
+            <img src="/images/photo04.webp" alt="Bar">
+            <div class="instagram-overlay">
+                <span class="instagram-icon">📸</span>
+            </div>
+        </div>
+        
+        <!--<div class="instagram-card">
+            <img src="/images/gallery/photo5.jpg" alt="Cocktail 3">
+            <div class="instagram-overlay">
+                <span class="instagram-icon">📸</span>
+            </div>
+        </div>-->
+        
+        <div class="instagram-card">
+            <img src="/images/beer.jpg" alt="Ambiance 2">
+            <div class="instagram-overlay">
+                <span class="instagram-icon">📸</span>
+            </div>
+        </div>
+    </div>
+
+    <p class="section-subtitle" style="text-align: center;">Retrouvez-nous également sur Insta</p>
+    
+    <div style="text-align: center; margin-top: 3rem;">
+        <a href="https://instagram.com/" target="_blank" class="btn btn-primary">
+            📸 Voir plus sur Instagram
+        </a>
+    </div>
+</section>
+
+
+    <!-- Section Contact -->
+<section id="contact" class="reveal">
+    <h2 class="section-title">Nous contacter</h2>
+    <p class="section-subtitle">Retrouvez-nous sur les réseaux sociaux</p>
+    
+    <div class="contact-grid">
+        <a href="https://facebook.com/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="contact-card">
+            <div class="contact-icon">📘</div>
+            <h3>Facebook</h3>
+            <p1>@AuBarReims</p1>
+        </a>
+
+        <a href="https://instagram.com/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="contact-card">
+            <div class="contact-icon">📸</div>
+            <h3>Instagram</h3>
+            <p1>@AuBarReims</p1>
+        </a>
+    </div>
+</section>
+
+<!-- Address Section -->
+<section class="address-section">
+    <div class="address-content">
+        <div class="address-icon">📍</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=1+Rue+de+Chativesle+51100+Reims+France" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="address-link">
+            x Rue Au Bar, 51100 Reims, France
+        </a>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+          <a href="#home"><div class="logo"><img src="/images/logo011.png" alt="Au Bar Logo" class="hero-logo"></div>
+          </a>
+            <p class="copyright">&copy; 2025 Au Bar - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+
+<!-- SDK Facebook pour le widget Events -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" 
+            src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v18.0" 
+            nonce="YOUR_NONCE">
+    </script>
+    
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
