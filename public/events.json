@@ -1,48 +1,44 @@
 {
-  "events": [
+  "featured": {      
+    "date": "Vendredi 21 novembre",
+    "title": "Soirée du Vendredi",
+    "description": "Profitez de vos soirées habituelles du Vendredi et vos artistes préférés.",
+    "image": "/images/events/event-featured.jpg",
+    "time": "22h00 - 01h00",
+    "price": "Entrée gratuite",
+    "genre": "Concert",
+    "link": "https://instagram.com/"
+  },
+  "upcoming": [
     {
-      "id": 1,
+      "date": "Vendredi 21 novembre",
       "title": "Soirée du Vendredi",
-      "date": "2025-11-21",
-      "time": "22h00 - 01h00",
       "description": "Profitez de vos soirées habituelles du Vendredi et vos artistes préférés.",
-      "type": "Concert",
-      "price": "Entrée gratuite",
       "image": "/images/events/event-featured.jpg",
-      "featured": true
+      "time": "22h00 - 01h00",
+      "price": "Entrée gratuite",
+      "genre": "Concert",
+      "link": "https://instagram.com/"
     },
     {
-      "id": 2,
-      "title": "Concert Rock",
-      "date": "2025-11-22",
-      "time": "22h00 - 02h00",
-      "description": "Le groupe de votre enfance.",
-      "type": "Rock",
-      "price": "Gratuit",
-      "image": "/images/events/dj-night.jpg",
-      "featured": false
+      "date": "Vendredi 21 novembre",
+      "title": "Soirée du Vendredi",
+      "description": "Profitez de vos soirées habituelles du Vendredi et vos artistes préférés.",
+      "image": "/images/events/event-featured.jpg",
+      "time": "22h00 - 01h00",
+      "price": "Entrée gratuite",
+      "genre": "Concert",
+      "link": "https://instagram.com/"
     },
     {
-      "id": 3,
-      "title": "Soirée Mots Fléchés",
-      "date": "2025-11-23",
-      "time": "18h00 - 23h30",
-      "description": "Apporte ton meilleur crayon à papier.",
-      "type": "Vieillesse",
-      "price": "Gratuit",
-      "image": "/images/events/dj-night.jpg",
-      "featured": false
-    },
-    {
-    "id": 4,
-      "title": "Soirée DJ",
-      "date": "2025-11-28",
-      "time": "21h00 - 01h00",
-      "description": "Soirée DJ avec DJ Chelou aux platines ",
-      "type": "Éléctro",
-      "price": "Gratuit",
-      "image": "/images/events/dj-night.jpg",
-      "featured": false
+      "date": "Vendredi 21 novembre",
+      "title": "Soirée du Vendredi",
+      "description": "Profitez de vos soirées habituelles du Vendredi et vos artistes préférés.",
+      "image": "/images/events/event-featured.jpg",
+      "time": "22h00 - 01h00",
+      "price": "Entrée gratuite",
+      "genre": "Concert",
+      "link": "https://instagram.com/"
     }    
   ]
 }
