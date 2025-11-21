@@ -1,44 +1,48 @@
 {
-  "featured": {
-    "date": "Vendredi 21 Novembre",
-    "title": "Soirée du vendredi",
-    "description": "Profitez de vos soirées habituelles du vendredi Au Bar. Retrouvez vos artistes préferés.",
-    "image": "/images/events/beer.jpg",
-    "time": "21h30 - 00h30",
-    "price": "Entrée gratuite",
-    "genre": "Musique",
-    "link": "https://instagram.com/"
-  },
-  "upcoming": [
+  "events": [
     {
-      "day": "21",
-      "month": "Nov",
-      "title": "Soirée du vendredi",
-      "time": "21h30 - 00h30"
+      "id": 1,
+      "title": "Soirée du Vendredi",
+      "date": "2025-11-21",
+      "time": "22h00 - 01h00",
+      "description": "Profitez de vos soirées habituelles du Vendredi et vos artistes préférés.",
+      "type": "Concert",
+      "price": "Entrée gratuite",
+      "image": "/images/events/event-featured.jpg",
+      "featured": true
     },
     {
-      "day": "28",
-      "month": "Nov",
-      "title": "DJ Night - House & Techno",
-      "time": "22h00 - 02h00"
+      "id": 2,
+      "title": "Concert Rock",
+      "date": "2025-11-22",
+      "time": "22h00 - 02h00",
+      "description": "Le groupe de votre enfance.",
+      "type": "Rock",
+      "price": "Gratuit",
+      "image": "/images/events/dj-night.jpg",
+      "featured": false
     },
     {
-      "day": "29",
-      "month": "Nov",
-      "title": "Soirée Quiz",
-      "time": "19h00 - 21h00"
+      "id": 3,
+      "title": "Soirée Mots Fléchés",
+      "date": "2025-11-23",
+      "time": "18h00 - 23h30",
+      "description": "Apporte ton meilleur crayon à papier.",
+      "type": "Vieillesse",
+      "price": "Gratuit",
+      "image": "/images/events/dj-night.jpg",
+      "featured": false
     },
     {
-      "day": "29",
-      "month": "Nov",
-      "title": "Concert",
-      "time": "22h00 - 01h00"
-    },
-    {
-      "day": "06",
-      "month": "Déc",
-      "title": "Soirée Années 80/90",
-      "time": "21h00 - 02h00"
-    }
+    "id": 4,
+      "title": "Soirée DJ",
+      "date": "2025-11-28",
+      "time": "21h00 - 01h00",
+      "description": "Soirée DJ avec DJ Chelou aux platines ",
+      "type": "Éléctro",
+      "price": "Gratuit",
+      "image": "/images/events/dj-night.jpg",
+      "featured": false
+    }    
   ]
 }
