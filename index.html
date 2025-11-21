@@ -166,56 +166,65 @@
 </section>
 
 
-      
+        <!-- Section Photos -->      
 <section id="gallery" class="reveal" style="padding: 4rem 5%;">
     <h2 class="section-title" style="text-align: center;">Les Photos</h2>
     <p class="section-subtitle" style="text-align: center;">Retrouvez vos souvenirs</p>
     
     <div class="instagram-grid">
-        <div class="instagram-card">
-            <img src="/images/photos/photo06.webp" alt="Le bar">
+        <div class="instagram-card" data-photo="1">
+            <img src="/images/photos/photo06.webp" alt="Le comptoir" 
+                 data-title="Le Comptoir"
+                 data-description="Commande tes meilleurs shooters auprés de tes serveurs préférés">
             <div class="instagram-overlay">
                 <span class="instagram-icon">📸</span>
             </div>
         </div>
         
-        <div class="instagram-card">
-            <img src="/images/photos/photo02.JPEG" alt="la terrasse en feu">
+        <div class="instagram-card" data-photo="2">
+            <img src="/images/photos/photo02.JPEG" alt="la terrasse en feu"
+                 data-title="La Terrasse en Feu"
+                 data-description="La terrasse est toujours bien animée lors de soirées mémorables">
             <div class="instagram-overlay">
                 <span class="instagram-icon">📸</span>
             </div>
         </div>
         
-        <div class="instagram-card">
-            <img src="/images/photos/photo01.JPEG" alt="Façade">
+        <div class="instagram-card" data-photo="3">
+            <img src="/images/photos/photo01.JPEG" alt="Façade"
+                 data-title="Façade du Bar"
+                 data-description="Bienvenue Au Bar, plus grande Rhumerie au cœur de Reims">
             <div class="instagram-overlay">
                 <span class="instagram-icon">📸</span>
             </div>
         </div>
         
-        <div class="instagram-card">
-            <img src="/images/photos/photo04.webp" alt="Bar">
+        <div class="instagram-card" data-photo="4">
+            <img src="/images/photos/photo04.webp" alt="Bar"
+                 data-title="Le Bar"
+                 data-description="Viens t'installer et savourer ta bière préférée">
             <div class="instagram-overlay">
                 <span class="instagram-icon">📸</span>
             </div>
         </div>
-        
-        <!--<div class="instagram-card">
-            <img src="/images/gallery/photo5.jpg" alt="Cocktail 3">
-            <div class="instagram-overlay">
-                <span class="instagram-icon">📸</span>
-            </div>
-        </div>-->
-        
-        <!--<div class="instagram-card">
-            <img src="/images/photos/beer1.jpg" alt="Ambiance 2">
-            <div class="instagram-overlay">
-                <span class="instagram-icon">📸</span>
-            </div>
-        </div>-->
     </div>
 
-    <p class="section-subtitle" style="text-align: center;">Retrouvez-nous également sur Insta</p>
+    <!-- Modal Lightbox -->
+    <div id="photoModal" class="photo-modal">
+        <button class="modal-close" aria-label="Fermer">&times;</button>
+        <button class="modal-nav modal-prev" aria-label="Photo précédente">‹</button>
+        <button class="modal-nav modal-next" aria-label="Photo suivante">›</button>
+        
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <p class="section-subtitle" style="text-align: center; margin-top: 3rem;">Retrouvez-nous également sur Insta</p>
     
     <div style="text-align: center; margin-top: 3rem;">
         <a href="https://instagram.com/" target="_blank" class="btn btn-primary">
@@ -223,6 +232,7 @@
         </a>
     </div>
 </section>
+
 
 
     <!-- Section Contact -->

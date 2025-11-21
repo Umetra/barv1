@@ -6,8 +6,9 @@ import './css/responsive.css'
 // Import JS modules
 import './js/events.js'
 import './js/navigation.js'
+import { initGallery } from './js/gallery.js'
 
-console.log('🍸 Le Bar - Site chargé avec succès!')
+console.log('🍸 Au Bar - Site chargé avec succès!')
 
 
 
@@ -156,3 +157,5 @@ if (dateInput) {
     const today = new Date().toISOString().split('T')[0]
     dateInput.setAttribute('min', today)
 }
+
+initGallery();
