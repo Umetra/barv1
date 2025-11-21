@@ -1,44 +1,56 @@
 {
-  "featured": {
-    "date": "Vendredi 22 Novembre",
+  "featured": {      
+    "date": "Vendredi 21 novembre",
     "title": "Soirée du Vendredi",
-    "description": "Profitez d'une soirée jazz intimiste avec le quartet \"Blue Notes\". Une ambiance feutrée, des cocktails signatures et des standards du jazz revisités.",
+    "description": "Profitez de vos soirées habituelles du Vendredi et vos artistes préférés.",
     "image": "/images/events/beer.jpg",
-    "time": "20h00 - 00h00",
+    "time": "22h00 - 01h00",
     "price": "Entrée gratuite",
-    "genre": "Jazz, Blues, Soul",
+    "genre": "Concert",
     "link": "https://instagram.com/"
   },
   "upcoming": [
     {
       "day": "22",
       "month": "Nov",
-      "title": "Soirée Jazz Live",
-      "time": "20h00 - 00h00"
+      "title": "Concert Rock",
+      "time": "21h00 - 00h00",
+      "date": "Samedi 22 novembre",
+      "title": "Concert Rock",
+      "description": "Retrouvez vos classiques Rock.",
+      "image": "/images/events/beer.jpg",
+      "time": "21h00 - 00h00",
+      "price": "Entrée gratuite",
+      "genre": "Concert",
+      "link": "https://instagram.com/"
     },
     {
       "day": "23",
       "month": "Nov",
-      "title": "DJ Night - House & Techno",
-      "time": "22h00 - 02h00"
+      "title": "Soirée Mots Fléchés",
+      "time": "18h30 - 23h30",
+      "date": "Dimanche 23 novembre",
+      "title": "Soirée Mots Fléchés",
+      "description": "Passe ton meilleur dimanche de vieux.",
+      "image": "/images/events/beer.jpg",
+      "time": "18h30 - 23h30",
+      "price": "Entrée gratuite",
+      "genre": "Jeu",
+      "link": "https://instagram.com/"
     },
     {
-      "day": "29",
+      "day": "28",
       "month": "Nov",
-      "title": "Soirée Quiz & Cocktails",
-      "time": "19h00 - 23h00"
-    },
-    {
-      "day": "30",
-      "month": "Nov",
-      "title": "Live Acoustic Session",
-      "time": "20h30 - 00h00"
-    },
-    {
-      "day": "06",
-      "month": "Déc",
-      "title": "Soirée Années 80/90",
-      "time": "21h00 - 02h00"
-    }
+      "title": "Soirée DJ",
+      "time": "21h00 - 01h00",
+      "date": "Vendredi 28 novembre",
+      "title": "Soirée DJ",
+      "description": "Des remix de folies !",
+      "image": "/images/events/beer.jpg",
+      "time": "21h00 - 01h00",
+      "price": "Entrée gratuite",
+      "genre": "Soirée DJ",
+      "link": "https://instagram.com/"
+    }    
   ]
 }
